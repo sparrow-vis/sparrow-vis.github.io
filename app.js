@@ -105,7 +105,7 @@ export const App = {
           this.notFound = false;
 
           // scroll to top
-          if (this.$refs.main && this.$refs.scrollTo) {
+          if (this.$refs.main && this.$refs.main.scrollTo) {
             this.$refs.main.scrollTo(0, 0);
           }
 
