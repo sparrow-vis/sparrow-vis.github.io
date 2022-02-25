@@ -105,7 +105,9 @@ export const App = {
           this.notFound = false;
 
           // scroll to top
-          this.$refs.main.scrollTo(0, 0);
+          if (this.$refs.main && this.$refs.scrollTo) {
+            this.$refs.main.scrollTo(0, 0);
+          }
 
           return notebook;
         } catch (e) {
